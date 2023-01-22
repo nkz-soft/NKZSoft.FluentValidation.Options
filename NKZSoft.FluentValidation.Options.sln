@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NKZSoft.FluentValidation.Options", "src\NKZSoft.FluentValidation.Options\NKZSoft.FluentValidation.Options.csproj", "{0496B3F7-A1A3-4DF6-B9BE-0BDAA2A59903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NKZSoft.FluentValidation.Options.Tests", "tests\NKZSoft.FluentValidation.Options.Tests\NKZSoft.FluentValidation.Options.Tests.csproj", "{A91DE40B-2D4F-4126-B354-9690C03F74C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0496B3F7-A1A3-4DF6-B9BE-0BDAA2A59903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0496B3F7-A1A3-4DF6-B9BE-0BDAA2A59903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0496B3F7-A1A3-4DF6-B9BE-0BDAA2A59903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0496B3F7-A1A3-4DF6-B9BE-0BDAA2A59903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91DE40B-2D4F-4126-B354-9690C03F74C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91DE40B-2D4F-4126-B354-9690C03F74C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91DE40B-2D4F-4126-B354-9690C03F74C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91DE40B-2D4F-4126-B354-9690C03F74C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
