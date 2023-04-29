@@ -32,5 +32,4 @@ internal sealed class FluentValidationOptions<TOptions> : IValidateOptions<TOpti
         }
         return ValidateOptionsResult.Skip;
     }
-
 }
