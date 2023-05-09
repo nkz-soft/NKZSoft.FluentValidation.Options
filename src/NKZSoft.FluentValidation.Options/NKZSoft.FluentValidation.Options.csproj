@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <Version>1.0.3</Version>
-    <PackageVersion>1.0.3</PackageVersion>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <Version>1.0.4</Version>
+    <PackageVersion>1.0.4</PackageVersion>
     <Description>Provides validation to strongly typed configuration objects using FluentValidation library</Description>
     <Copyright>Copyright © 2023</Copyright>
   </PropertyGroup>
