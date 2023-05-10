@@ -1,3 +1,4 @@
 ﻿#nullable enable
 NKZSoft.FluentValidation.Options.ServiceCollectionExtensions
 static NKZSoft.FluentValidation.Options.ServiceCollectionExtensions.AddWithValidation<TOptions, TValidator>(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, Microsoft.Extensions.Configuration.IConfiguration! configuration, System.Action<Microsoft.Extensions.Configuration.BinderOptions!>? configureBinder = null) -> Microsoft.Extensions.Options.OptionsBuilder<TOptions!>!
+static NKZSoft.FluentValidation.Options.ServiceCollectionExtensions.AddWithValidation<TOptions, TValidator>(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, System.Action<TOptions!>! options, System.Action<Microsoft.Extensions.Configuration.BinderOptions!>? configureBinder = null) -> Microsoft.Extensions.Options.OptionsBuilder<TOptions!>!
