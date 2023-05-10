@@ -30,4 +30,31 @@ public static class ServiceCollectionExtensions
             .ValidateFluentValidation()
             .ValidateOnStart();
     }
+
+    /// <summary>
+    /// Register this options instance for validation of an registered <see cref="IValidator{TOptions}"/> in service container.
+    /// </summary>
+    /// <param name="services">The <see cref="IServiceCollection"/> to add the services to.</param>
+    /// <param name="options">Used to configure the <see cref="TOptions"/>.</param>
+    /// <param name="configureBinder">Optional. Used to configure the <see cref="BinderOptions"/>.</param>
+    /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+    /// <typeparam name="TValidator">The validator type that defines a validator for a particular type.</typeparam>
+    /// <returns>The <see cref="OptionsBuilder{TOptions}"/> so that additional calls can be chained.</returns>
+    public static OptionsBuilder<TOptions> AddWithValidation<TOptions, TValidator>(
+        this IServiceCollection services,
+        Action<TOptions> options,
+        Action<BinderOptions>? configureBinder = null)
+        where TOptions : class
+        where TValidator : class, IValidator<TOptions>
+    {
+        ArgumentNullException.ThrowIfNull(services);
+        ArgumentNullException.ThrowIfNull(options);
+
+        services.AddScoped<IValidator<TOptions>, TValidator>();
+
+        return services.AddOptions<TOptions>()
+            .Configure(options)
+            .ValidateFluentValidation()
+            .ValidateOnStart();
+    }
 }

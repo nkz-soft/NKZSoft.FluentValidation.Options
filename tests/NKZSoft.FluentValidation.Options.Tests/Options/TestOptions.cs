@@ -1,4 +1,4 @@
-﻿namespace NKZSoft.FluentValidation.Options.Tests;
+﻿namespace NKZSoft.FluentValidation.Options.Tests.Options;
 
 internal sealed record TestOptions
 {
