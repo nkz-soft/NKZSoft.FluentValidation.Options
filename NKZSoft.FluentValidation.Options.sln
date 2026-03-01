@@ -4,6 +4,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NKZSoft.FluentValidation.Op
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NKZSoft.FluentValidation.Options.Tests", "tests\NKZSoft.FluentValidation.Options.Tests\NKZSoft.FluentValidation.Options.Tests.csproj", "{A91DE40B-2D4F-4126-B354-9690C03F74C0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{7329A969-5E22-437E-9CDF-BF27B55908C0}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\release-drafter.yml = .github\release-drafter.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{FEC02BD6-5327-4F58-ABD3-4B296D9FD37C}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yaml = .github\workflows\build.yaml
+		.github\workflows\publish-nuget.yaml = .github\workflows\publish-nuget.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +30,8 @@ Global
 		{A91DE40B-2D4F-4126-B354-9690C03F74C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A91DE40B-2D4F-4126-B354-9690C03F74C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A91DE40B-2D4F-4126-B354-9690C03F74C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEC02BD6-5327-4F58-ABD3-4B296D9FD37C} = {7329A969-5E22-437E-9CDF-BF27B55908C0}
 	EndGlobalSection
 EndGlobal
