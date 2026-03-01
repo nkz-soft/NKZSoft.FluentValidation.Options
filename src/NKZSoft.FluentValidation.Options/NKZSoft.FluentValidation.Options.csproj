@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
-    <Version>1.2.2</Version>
+    <Version>1.3.0</Version>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <Description>Provides validation to strongly typed configuration objects using FluentValidation library</Description>
-    <Copyright>Copyright © 2024</Copyright>
+    <Copyright>Copyright © 2026</Copyright>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="12.1.1" />
